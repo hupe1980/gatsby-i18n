@@ -1,7 +1,8 @@
 {
   "name": "gatsby-starter-lingui",
+  "private": true,
   "description": "Gatsby lingui starter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "license": "MIT",
@@ -16,7 +17,7 @@
   },
   "dependencies": {
     "@lingui/react": "^2.4.0",
-    "@wapps/gatsby-plugin-lingui": "^1.0.1",
+    "@wapps/gatsby-plugin-lingui": "^1.0.2",
     "gatsby": "^2.0.0-beta.97",
     "gatsby-plugin-manifest": "^2.0.2-beta.5",
     "gatsby-plugin-offline": "^2.0.0-beta.9",
@@ -27,5 +28,6 @@
   },
   "devDependencies": {
     "@lingui/cli": "^2.4.0"
-  }
+  },
+  "gitHead": "1bf52e4b2a459af17526d03ebaf34cb1a87b5ab4"
 }

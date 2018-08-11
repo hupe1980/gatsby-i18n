@@ -1,7 +1,7 @@
 {
   "name": "@wapps/gatsby-plugin-lingui",
   "description": "Multi language feature for Gatsby",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "keywords": [
@@ -14,12 +14,12 @@
   "scripts": {
     "build": "babel src --out-dir . --ignore __tests__",
     "build:watch": "babel -w src --out-dir . --ignore __tests__",
-    "prepublish": "npm run build"
+    "prepare": "yarn run build"
   },
   "dependencies": {
     "@lingui/babel-preset-react": "^2.4.0",
     "@lingui/react": "^2.4.0",
-    "@wapps/gatsby-i18n": "^1.0.1"
+    "@wapps/gatsby-i18n": "^1.0.2"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0-alpha"
@@ -31,5 +31,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1bf52e4b2a459af17526d03ebaf34cb1a87b5ab4"
 }

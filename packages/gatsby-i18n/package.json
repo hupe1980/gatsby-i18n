@@ -1,7 +1,7 @@
 {
   "name": "@wapps/gatsby-i18n",
   "description": "Multi language feature for Gatsby",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "keywords": [
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "rimraf lib && babel src --out-dir lib --ignore __tests__",
     "build:watch": "rimraf lib && babel -w src --out-dir lib --ignore __tests__",
-    "prepublish": "npm run build"
+    "prepare": "yarn run build"
   },
   "dependencies": {
     "@wapps/langtag-utils": "^1.0.2",
@@ -34,5 +34,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1bf52e4b2a459af17526d03ebaf34cb1a87b5ab4"
 }
