@@ -40,7 +40,7 @@ options: {
 ```
 
 ## Starters
-# [gatsby-starter-i18next](/examples/gatsby-starter-i18next)
+# [gatsby-starter-i18next](/starters/gatsby-starter-i18next)
 - i18next integration
 - automatic browser-language detection and redirection
 - language switcher component

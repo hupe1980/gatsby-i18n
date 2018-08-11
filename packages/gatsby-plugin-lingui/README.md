@@ -40,7 +40,7 @@ options: {
 ```
 
 ## Starters
-# [gatsby-starter-lingui](/examples/gatsby-starter-lingui)
+# [gatsby-starter-lingui](/starters/gatsby-starter-lingui)
 - lingui integration
 - automatic browser-language detection and redirection
 - language switcher component

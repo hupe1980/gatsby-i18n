@@ -5,13 +5,13 @@
 This repository is a monorepo managed with [Lerna](https://github.com/lerna/lerna). [Several packages](/packages) are published to npm from the same codebase.
 
 ## Starters
-# [gatsby-starter-i18next](/examples/gatsby-starter-i18next)
+# [gatsby-starter-i18next](/starters/gatsby-starter-i18next)
 - i18next integration
 - automatic browser-language detection and redirection
 - language switcher component
 - ...
 
-# [gatsby-starter-lingui](/examples/gatsby-starter-lingui)
+# [gatsby-starter-lingui](/starters/gatsby-starter-lingui)
 - lingui integration
 - automatic browser-language detection and redirection
 - language switcher component
