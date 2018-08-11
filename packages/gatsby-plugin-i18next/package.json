@@ -1,0 +1,35 @@
+{
+  "name": "@wapps/gatsby-plugin-i18next",
+  "description": "Multi language feature for Gatsby",
+  "version": "1.0.0",
+  "author": "hello@webappsolutions.de",
+  "repository": "hupe1980/gatsby-i18n",
+  "keywords": [
+    "react",
+    "gatsby",
+    "lingui"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "build:watch": "babel -w src --out-dir . --ignore __tests__",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@wapps/gatsby-i18n": "^1.0.0",
+    "i18next": "^11.6.0",
+    "react-i18next": "^7.10.1"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "devDependencies": {
+    "gatsby": ">2.0.0-alpha",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
