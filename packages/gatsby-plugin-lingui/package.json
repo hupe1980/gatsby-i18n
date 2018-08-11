@@ -1,7 +1,7 @@
 {
   "name": "@wapps/gatsby-plugin-lingui",
   "description": "Multi language feature for Gatsby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "keywords": [
@@ -19,7 +19,7 @@
   "dependencies": {
     "@lingui/babel-preset-react": "^2.4.0",
     "@lingui/react": "^2.4.0",
-    "@wapps/gatsby-i18n": "^1.0.0"
+    "@wapps/gatsby-i18n": "^1.0.1"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0-alpha"

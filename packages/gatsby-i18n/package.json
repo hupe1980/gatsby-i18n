@@ -1,7 +1,7 @@
 {
   "name": "@wapps/gatsby-i18n",
   "description": "Multi language feature for Gatsby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "keywords": [
