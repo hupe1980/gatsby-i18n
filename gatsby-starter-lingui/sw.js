@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/gatsby-i18n/app-064339537cdc586c1147.js","9e285f8f111678ce3b4e7e655abe3f08"],["/gatsby-i18n/component---node-modules-gatsby-plugin-offline-app-shell-js-f54e9a94273512aa61da.js","f2147763c73d3b4cebd5aa75e28be194"],["/gatsby-i18n/index.html","83f8b29519a4abe1f49d4057733c2cbb"],["/gatsby-i18n/manifest.webmanifest","df8bdc7b89b8133d050c0b3eb2aa036c"],["/gatsby-i18n/offline-plugin-app-shell-fallback/index.html","358efdb1d7bd0bcbf575c7e63346a069"],["/gatsby-i18n/webpack-runtime-05302f0af7ac23c72f16.js","b5af391c46ab9b57603971e0d4908a07"]];
+var precacheConfig = [["/gatsby-i18n/gatsby-starter-lingui/app-124401f3ebb65c3999bb.js","a211787d2253b03247d7ed696dbfccc6"],["/gatsby-i18n/gatsby-starter-lingui/component---node-modules-gatsby-plugin-offline-app-shell-js-f54e9a94273512aa61da.js","f2147763c73d3b4cebd5aa75e28be194"],["/gatsby-i18n/gatsby-starter-lingui/index.html","6ae10bb441c593f8abbfd2288deda758"],["/gatsby-i18n/gatsby-starter-lingui/manifest.webmanifest","df8bdc7b89b8133d050c0b3eb2aa036c"],["/gatsby-i18n/gatsby-starter-lingui/offline-plugin-app-shell-fallback/index.html","ced4afee9ded0708cee2b8c624e40be5"],["/gatsby-i18n/gatsby-starter-lingui/webpack-runtime-61c93ec5a26921f00080.js","03465463e7f444e013ac4dbd608e7a7a"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
