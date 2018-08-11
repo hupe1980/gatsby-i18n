@@ -11,7 +11,8 @@
     "serve": "gatsby serve",
     "add-locale": "lingui add-locale",
     "extract": "lingui extract",
-    "compile": "lingui compile"
+    "compile": "lingui compile",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -e gatsby-starter-lingui"
   },
   "dependencies": {
     "@lingui/react": "^2.4.0",

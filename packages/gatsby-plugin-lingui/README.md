@@ -40,10 +40,12 @@ options: {
 ```
 
 ## Starters
-# [gatsby-starter-lingui](/starters/gatsby-starter-lingui)
+### gatsby-starter-lingui
+[Demo](https://hupe1980.github.io/gatsby-i18n/gatsby-starter-lingui) [Source](/starters/gatsby-starter-lingui)
 - lingui integration
 - automatic browser-language detection and redirection
-- language switcher component
+- language switcher
+- hreflang
 - ...
 
 ## License

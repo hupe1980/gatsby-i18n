@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { navigate } from 'gatsby';
+import { navigate, withPrefix } from 'gatsby';
 
 import { I18nConsumer } from './I18nContext';
 
 class Language extends Component {
   handleChangeLng = newLng => {
     const { originalPath } = this.props;
-    navigate(`/${newLng}${originalPath}`);
+    const newUrl = withPrefix(`/${newLng}${originalPath}`);
+    navigate(newUrl);
   };
 
   render() {

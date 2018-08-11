@@ -8,7 +8,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -e gatsby-starter-i18next"
   },
   "dependencies": {
     "@wapps/gatsby-plugin-i18next": "^1.0.0",

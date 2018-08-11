@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/gatsby-i18n/gatsby-starter-lingui',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
