@@ -1,12 +1,14 @@
 {
   "name": "@wapps/gatsby-plugin-i18next",
-  "description": "Multi language feature for Gatsby",
-  "version": "1.0.3",
+  "description": "Gatsby plugin that provides i18n support",
+  "version": "1.0.4",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "keywords": [
     "react",
     "gatsby",
+    "gatsby-plugin",
+    "gatsby-component",
     "i18next",
     "i18n"
   ],
@@ -18,7 +20,7 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@wapps/gatsby-i18n": "^1.0.3",
+    "@wapps/gatsby-i18n": "^1.0.4",
     "i18next": "^11.6.0",
     "react-i18next": "^7.10.1"
   },
@@ -26,7 +28,7 @@
     "gatsby": ">2.0.0-alpha"
   },
   "devDependencies": {
-    "gatsby": ">2.0.0-alpha",
+    "gatsby": "^2.0.0-beta.105",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
