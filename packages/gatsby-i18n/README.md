@@ -1,5 +1,5 @@
 # gatsby-i18n
-> Multi language feature for [Gatsby](https://github.com/gatsbyjs/gatsby).
+> [Gatsby](https://github.com/gatsbyjs/gatsby) plugin that provides i18n support.
 
 ## Installation
 ```sh
