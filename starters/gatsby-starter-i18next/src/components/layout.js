@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 import { Head } from '@wapps/gatsby-plugin-lingui';
 
 import Header from './header';
@@ -31,4 +31,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default translate()(Layout);
+export default withNamespaces()(Layout);

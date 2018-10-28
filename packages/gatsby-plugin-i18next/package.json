@@ -21,16 +21,17 @@
   },
   "dependencies": {
     "@wapps/gatsby-i18n": "^1.0.5",
-    "i18next": "^11.6.0",
-    "react-i18next": "^7.10.1"
+    "i18next": "^12.0.0",
+    "prop-types": "^15.6.2",
+    "react-i18next": "^8.3.5"
   },
   "peerDependencies": {
-    "gatsby": ">2.0.0-alpha"
+    "gatsby": ">2.0.0"
   },
   "devDependencies": {
-    "gatsby": "^2.0.0-beta.105",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "gatsby": "^2.0.31",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   },
   "publishConfig": {
     "access": "public"
