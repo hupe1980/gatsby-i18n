@@ -6,7 +6,8 @@ import { I18nConsumer } from './I18nContext';
 class Language extends Component {
   handleChangeLng = newLng => {
     const { originalPath } = this.props;
-    const newUrl = withPrefix(`/${newLng}${originalPath}`);
+    //const newUrl = withPrefix(`/${newLng}${originalPath}`);
+    const newUrl = `/${newLng}${originalPath}`;
     navigate(newUrl);
   };
 
