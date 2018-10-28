@@ -2,7 +2,7 @@
   "name": "gatsby-starter-lingui",
   "private": true,
   "description": "Gatsby lingui starter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "license": "MIT",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@lingui/react": "^2.4.0",
-    "@wapps/gatsby-plugin-lingui": "^1.0.5",
+    "@wapps/gatsby-plugin-lingui": "^1.0.6",
     "gatsby": "^2.0.31",
     "gatsby-plugin-manifest": "^2.0.6",
     "gatsby-plugin-offline": "^2.0.9",
