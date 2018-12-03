@@ -16,6 +16,7 @@
   "main": "lib/index.js",
   "files": [
     "lib",
+    "src/plugin/fragments.js",
     "plugin.js"
   ],
   "scripts": {
