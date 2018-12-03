@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withNamespaces } from 'react-i18next';
-import { Head } from '@wapps/gatsby-plugin-lingui';
+import { Head } from '@wapps/gatsby-plugin-i18next';
 
 import Header from './header';
 import './layout.css';
