@@ -2,7 +2,7 @@ import path from 'path';
 
 const onCreatePage = ({ page, actions }, pluginOptions) => {
   const { createPage, deletePage } = actions;
-  const { fallbackLng, availableLngs, siteUrl } = pluginOptions;
+  const { fallbackLng, availableLngs, siteUrl, i18nextOptions } = pluginOptions;
 
   if (page.path.includes('dev-404')) {
     return Promise.resolve();
@@ -20,6 +20,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
         routed: false,
         redirectPage: page.path,
         siteUrl,
+        i18nextOptions,
       },
     };
 
@@ -37,6 +38,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
           routed: true,
           originalPath: page.path,
           siteUrl,
+          i18nextOptions,
         },
       };
 

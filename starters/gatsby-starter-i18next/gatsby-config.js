@@ -27,6 +27,9 @@ module.exports = {
         availableLngs: ['en', 'de'],
         fallbackLng: 'en',
         siteUrl: 'https://www.example.com/',
+        i18nextOptions: {
+          debug: false,
+        },
       },
     },
     'gatsby-plugin-offline',

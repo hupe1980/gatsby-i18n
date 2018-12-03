@@ -11,7 +11,10 @@ const withI18next = (options = {}) => Comp => {
 
       const { pageContext } = props;
 
-      this.i18n = setupI18next(pageContext.fallbackLng);
+      this.i18n = setupI18next(
+        pageContext.fallbackLng,
+        pageContext.i18nextOptions,
+      );
       this.activateLng();
     }
 
