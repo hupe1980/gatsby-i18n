@@ -4,10 +4,12 @@
   "scripts": {
     "build": "lerna run build --scope @wapps/*",
     "build:watch": "lerna run build:watch --parallel --scope @wapps/*",
-    "deploy": "lerna run deploy --concurrency 1 --scope gatsby-starter*"
+    "deploy": "lerna run deploy --concurrency 1 --scope gatsby-starter*",
+    "start:i18next": "yarn workspace gatsby-starter-i18next start",
+    "start:lingui": "yarn workspace gatsby-starter-lingui start"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -16,9 +18,9 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "9.x",
-    "eslint": "5.x",
+    "eslint": "^5.12.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-config-react-app": "^3.0.4",
+    "eslint-config-react-app": "^3.0.6",
     "eslint-plugin-flowtype": "2.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
@@ -26,8 +28,8 @@
     "eslint-plugin-react": "7.x",
     "gh-pages": "^2.0.1",
     "jest": "^23.6.0",
-    "lerna": "^3.4.3",
-    "prettier": "^1.14.3"
+    "lerna": "^3.10.5",
+    "prettier": "^1.15.3"
   },
   "workspaces": [
     "packages/*",

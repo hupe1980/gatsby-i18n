@@ -25,13 +25,14 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@wapps/langtag-utils": "^1.0.2",
+    "langtag-utils": "^1.1.2",
     "react-helmet": "^5.2.0"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "gatsby": "^2.0.31",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",

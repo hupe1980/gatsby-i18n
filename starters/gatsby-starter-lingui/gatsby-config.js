@@ -29,6 +29,6 @@ module.exports = {
         siteUrl: 'https://www.example.com/',
       },
     },
-    'gatsby-plugin-offline',
+    //'gatsby-plugin-offline',
   ],
 };

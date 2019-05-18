@@ -8,34 +8,34 @@
         "useBuiltIns": "usage",
         "shippedProposals": true,
         "targets": {
-          "browsers": [">0.25%", "not dead"],
-        },
-      },
+          "browsers": [">0.25%", "not dead"]
+        }
+      }
     ],
     [
       "@babel/preset-react",
       {
         "useBuiltIns": true,
-        "pragma": "React.createElement",
-      },
+        "pragma": "React.createElement"
+      }
     ],
     "@babel/preset-flow",
-    "@lingui/babel-preset-react",
+    "@lingui/babel-preset-react"
   ],
   "plugins": [
     [
       "@babel/plugin-proposal-class-properties",
       {
-        "loose": true,
-      },
+        "loose": true
+      }
     ],
     "@babel/plugin-syntax-dynamic-import",
     [
       "@babel/plugin-transform-runtime",
       {
         "helpers": true,
-        "regenerator": true,
-      },
-    ],
-  ],
+        "regenerator": true
+      }
+    ]
+  ]
 }

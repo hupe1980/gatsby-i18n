@@ -25,8 +25,10 @@ const IndexPage = () => (
 export default withLingui()(IndexPage);
 
 export const query = graphql`
-  query($lng: String!) {
-    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+  query($lng: String!, $fallbackLng: String!) {
+    locales: allLocale(
+      filter: { lng: { in: [$lng, $fallbackLng] }, ns: { eq: "messages" } }
+    ) {
       ...LocaleFragment
     }
   }

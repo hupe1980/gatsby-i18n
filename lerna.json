@@ -2,8 +2,5 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "packages": [
-    "packages/*",
-    "starters/*"
-  ]
+  "packages": ["packages/*", "starters/*"]
 }
