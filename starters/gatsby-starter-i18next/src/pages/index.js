@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { Link, withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from '../components/layout';
 
 const IndexPage = () => (
-  <NamespacesConsumer>
+  <Translation>
     {t => (
       <Layout>
         <h1>{t('Hi people')}</h1>
@@ -15,7 +15,7 @@ const IndexPage = () => (
         <Link to="/page-2/">{t('Go to page 2')}</Link>
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(IndexPage);

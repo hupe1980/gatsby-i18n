@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { Link, withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from '../components/layout';
 
 const SecondPage = () => (
-  <NamespacesConsumer>
+  <Translation>
     {t => (
       <Layout>
         <h1>{t('Hi from the second page')}</h1>
@@ -14,7 +14,7 @@ const SecondPage = () => (
         <Link to="/">{t('Go back to the homepage')}</Link>
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(SecondPage);

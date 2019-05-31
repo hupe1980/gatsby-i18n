@@ -5,6 +5,9 @@ function setupI18next(fallbackLng, i18nextOptions) {
     debug: false,
     defaultNS: 'messages',
     fallbackLng,
+    react: {
+      useSuspense: false,
+    },
     ...i18nextOptions,
   });
 

@@ -20,18 +20,18 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@lingui/babel-preset-react": "^2.7.2",
-    "@lingui/react": "^2.7.2",
+    "@lingui/babel-preset-react": "^2.8.3",
+    "@lingui/react": "^2.8.3",
     "@wapps/gatsby-i18n": "^1.1.4"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "gatsby": "^2.0.31",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0"
+    "@babel/cli": "^7.4.4",
+    "gatsby": "^2.8.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "publishConfig": {
     "access": "public"
