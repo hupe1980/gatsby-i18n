@@ -1,7 +1,7 @@
 {
   "name": "@wapps/gatsby-plugin-lingui",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "keywords": [
@@ -22,7 +22,7 @@
   "dependencies": {
     "@lingui/babel-preset-react": "^2.8.3",
     "@lingui/react": "^2.8.3",
-    "@wapps/gatsby-i18n": "^1.1.4"
+    "@wapps/gatsby-i18n": "^1.1.5"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0"
