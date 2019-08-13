@@ -8,12 +8,15 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
     return Promise.resolve();
   }
 
+  const pageContext = { ...page.context, path: undefined };
+
   return new Promise(resolve => {
     const redirect = path.resolve('./.cache/@wapps/redirect.js');
     const redirectPage = {
       ...page,
       component: redirect,
       context: {
+        ...pageContext,
         availableLngs,
         fallbackLng,
         lng: null,
@@ -32,6 +35,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
         ...page,
         path: `/${lng}${page.path}`,
         context: {
+          ...pageContext,
           availableLngs,
           fallbackLng,
           lng,
