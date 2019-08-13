@@ -2,7 +2,7 @@
   "name": "gatsby-starter-i18next",
   "private": true,
   "description": "Gatsby i18next starter",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "hello@webappsolutions.de",
   "repository": "hupe1980/gatsby-i18n",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -e gatsby-starter-i18next"
   },
   "dependencies": {
-    "@wapps/gatsby-plugin-i18next": "^1.1.5",
+    "@wapps/gatsby-plugin-i18next": "^1.1.6",
     "gatsby": "^2.8.1",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.1",
