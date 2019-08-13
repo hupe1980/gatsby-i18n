@@ -8,7 +8,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
     return Promise.resolve();
   }
 
-  const pageContext = { ...page.context, path: undefined };
+  const pageContext = { ...page.context };
 
   return new Promise(resolve => {
     const redirect = path.resolve('./.cache/@wapps/redirect.js');
