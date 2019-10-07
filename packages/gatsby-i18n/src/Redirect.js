@@ -1,9 +1,9 @@
 import { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import { withPrefix, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import { lookup, navigatorLanguages } from 'langtag-utils';
 
 import { isBrowser } from './utils';
+import { resolveLocalizedPath } from './utils';
 
 class Redirect extends PureComponent {
   componentDidMount() {
@@ -11,7 +11,8 @@ class Redirect extends PureComponent {
   }
 
   perform = () => {
-    const { fallbackLng, availableLngs, redirectPage } = this.props.pageContext;
+    const { fallbackLng, availableLngs, redirectPage, localizedPaths } = this.props.pageContext;
+    const resolvePath = resolveLocalizedPath(localizedPaths, redirectPage);
 
     const detectedLng =
       window.localStorage.getItem('@wappsLng') ||
@@ -20,7 +21,7 @@ class Redirect extends PureComponent {
     window.localStorage.setItem('@wappsLng', detectedLng);
 
     //const newUrl = withPrefix(`/${detectedLng}${redirectPage}`);
-    const newUrl = `/${detectedLng}${redirectPage}`;
+    const newUrl = `/${detectedLng}${resolvePath(detectedLng)}`;
     navigate(newUrl, { replace: true });
   };
 

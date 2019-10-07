@@ -1,8 +1,10 @@
 import path from 'path';
+import { resolveLocalizedPath } from '../utils';
 
 const onCreatePage = ({ page, actions }, pluginOptions) => {
   const { createPage, deletePage } = actions;
-  const { fallbackLng, availableLngs, siteUrl, i18nextOptions } = pluginOptions;
+  const { fallbackLng, availableLngs, siteUrl, i18nextOptions, localizedPaths = {} } = pluginOptions;
+  const resolvePath = resolveLocalizedPath(localizedPaths, page.path);
 
   if (page.path.includes('dev-404')) {
     return Promise.resolve();
@@ -24,6 +26,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
         redirectPage: page.path,
         siteUrl,
         i18nextOptions,
+        localizedPaths,
       },
     };
 
@@ -33,7 +36,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
     availableLngs.forEach(lng => {
       const localePage = {
         ...page,
-        path: `/${lng}${page.path}`,
+        path: `/${lng}${resolvePath(lng)}`,
         context: {
           ...pageContext,
           availableLngs,
@@ -43,6 +46,7 @@ const onCreatePage = ({ page, actions }, pluginOptions) => {
           originalPath: page.path,
           siteUrl,
           i18nextOptions,
+          localizedPaths,
         },
       };
 

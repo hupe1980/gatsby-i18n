@@ -27,6 +27,13 @@ module.exports = {
         availableLngs: ['en', 'de'],
         fallbackLng: 'en',
         siteUrl: 'https://www.example.com/',
+        // opitonal for localizing page paths
+        localizedPaths: {
+          '/page-2/': {
+            en: '/page-two/',
+            de: '/page-zwei/'
+          }
+        }
       },
     },
     //'gatsby-plugin-offline',

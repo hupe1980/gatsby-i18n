@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import { Link as GatsbyLink } from 'gatsby';
 
 import { I18nConsumer } from './I18nContext';
+import { resolveLocalizedPath } from './utils';
 
-const Link = ({ to, lng, children, ...rest }) => {
+const Link = ({ to, lng, children, localizedPaths, ...rest }) => {
+  const resolvePath = resolveLocalizedPath(localizedPaths, to);
+
   return (
-    <GatsbyLink to={lng ? `/${lng}${to}` : `${to}`} {...rest}>
+    <GatsbyLink to={lng ? `/${lng}${resolvePath(lng)}` : `${to}`} {...rest}>
       {children}
     </GatsbyLink>
   );
@@ -18,5 +21,5 @@ Link.propTypes = {
 };
 
 export default props => (
-  <I18nConsumer>{({ lng }) => <Link lng={lng} {...props} />}</I18nConsumer>
+  <I18nConsumer>{({ lng, localizedPaths }) => <Link lng={lng} localizedPaths={localizedPaths} {...props} />}</I18nConsumer>
 );

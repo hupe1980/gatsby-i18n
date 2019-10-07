@@ -29,7 +29,13 @@ module.exports = {
         siteUrl: 'https://www.example.com/',
         i18nextOptions: {
           debug: false,
-        },
+        }, // opitonal for localizing page paths
+        localizedPaths: {
+          '/page-2/': {
+            en: '/page-two/',
+            de: '/page-zwei/'
+          }
+        }
       },
     },
     'gatsby-plugin-offline',

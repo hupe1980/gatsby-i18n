@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import { I18nConsumer } from './I18nContext';
+import { resolveLocalizedPath } from './utils';
+
 
 const defaultProps = {
   hreflang: true, // TODO https://github.com/nfl/react-helmet/issues/342
@@ -15,7 +17,10 @@ function Head({
   originalPath,
   siteUrl,
   hreflang,
+  localizedPaths,
 }) {
+  const resolvePath = resolveLocalizedPath(localizedPaths, originalPath);
+
   return (
     <>
       <Helmet>
@@ -25,7 +30,7 @@ function Head({
           <link
             key={value}
             rel="alternate"
-            href={`${siteUrl}${value}${originalPath}`}
+            href={`${siteUrl}${value}${resolvePath(value)}`}
             hreflang={value}
           />
         ))}
