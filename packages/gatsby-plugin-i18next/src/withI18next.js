@@ -25,7 +25,7 @@ const withI18next = (options = {}) => Comp => {
         data.locales.edges.forEach(({ node }) => {
           const { lng, ns, data } = node;
           if (!this.i18n.hasResourceBundle(lng, ns)) {
-            this.i18n.addResources(lng, ns, JSON.parse(data));
+            this.i18n.addResourceBundle(lng, ns, JSON.parse(data), true);
           }
         });
       }
